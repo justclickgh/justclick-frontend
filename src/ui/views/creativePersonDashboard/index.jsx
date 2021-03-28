@@ -12,7 +12,6 @@ import {Link, Route,Switch} from 'react-router-dom'
 import JobsPart from './components/jobs';
 import ProfilePart from './components/profile';
 import './assets/sideBar.css'
-import profile from '../../../assets/images/profile.png'
 import Avatar from 'antd/lib/avatar/avatar';
 import './assets/header.css'
 import handleRedirect from '../../../utils/handle_redirect';
@@ -20,7 +19,6 @@ import { getCurUserJobs } from '../../../redux/actions/cur_user_jobs_actions';
 import {getCurrentCreativeUser} from '../../../redux/actions/curent_creative_user_actions'
 import { postJob } from '../../../redux/actions/job_actions';
 import { connect } from 'react-redux';
-import logo from '../../../assets/images/logo.jpeg'
 import Earnings from './components/earnings';
 import JobFeed from './components/job_feed';
 import AppliedJobsPart from './components/user_jobs/applied_jobs';
@@ -28,6 +26,10 @@ import ApproveJobsPart from './components/user_jobs/approved_jobs';
 import CompletedJobsPart from './components/user_jobs/completed_jobs';
 import { fetchAcceptedJobs, fetchCompletedJobs, fetchPendingJobs } from '../../../redux/actions/cur_free_lancer_status_actions';
 import { Col, Row } from 'react-bootstrap';
+
+
+const logo = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/logo.jpeg'
+const profile = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/profile.png'
 
 const { Header, Content, Footer } = Layout;
 const { SubMenu } = Menu;

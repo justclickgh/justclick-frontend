@@ -1,11 +1,12 @@
 import { Button, Card, Divider } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import photo from '.././../../../assets/images/photo.png'
-import ui_ux_design from '.././../../../assets/images/ui_ux_design.png'
-import source_codes from '.././../../../assets/images/source_codes.png'
-import logo_design from '.././../../../assets/images/logo_design.png'
 import Banner from './banner'
+
+const photo = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photo.png'
+const ui_ux_design = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui_ux_design.png'
+const source_codes = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/source_codes.png'
+const logo_design = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/logo_design.png'
 
 
 const GettingStarted = () => {

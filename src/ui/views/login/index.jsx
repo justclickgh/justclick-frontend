@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import bgImg from "../../../assets/images/designer.jpg";
 import Sidebar from "../../components/Sidebar";
 import Main from "../../components/Main";
 
-// import {BrowserRouter as Router, Route} from 'react-router-dom'
+const bgImg = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/designer.jpg";
 
 
 const Login = ({location}) => {

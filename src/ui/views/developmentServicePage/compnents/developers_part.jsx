@@ -1,8 +1,9 @@
 import { Avatar, Button, Card, Comment, Rate, Tooltip } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import desing1 from '../../../../assets/images/design_image_1.JPG'
 import {planned_items} from '../../eventPlanningServicePage/components/event-planners'
+
+const desing1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design_image_1.JPG'
 const DesignersPart = () => {
     return (
         <div className = "container my-5 bg-light">

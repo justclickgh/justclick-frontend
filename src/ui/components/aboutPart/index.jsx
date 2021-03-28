@@ -1,8 +1,10 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CustomRandomButtom from '../../../utils/custom_random_buttom'
-import creative from '../../../assets/images/creative.png'
 import '../../../assets/css/intro_part.css'
+
+const creative = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/images/creative.png'
+
 const AboutPart = () => {
     return (
         <div className = "mt-4">

@@ -1,7 +1,9 @@
 import React from 'react'
-import empty_image from '../../../../assets/images/empty_white.png'
 import '../../../../assets/css/empty_add.css'
 import { Button } from 'antd'
+
+
+const empty_image = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/images/empty_white.png'
 const EmptyAdd = ({label,onClick,btn_label}) => {
     return (
         <div>

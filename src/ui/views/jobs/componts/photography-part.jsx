@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 import '../styles/projects-part.css'
 
 
-import photo3 from '../../../../assets/images/photography3.jpg'
-import photo2 from '../../../../assets/images/photography2.jpg'
-import photo1 from '../../../../assets/images/photography1.jpg'
+const photo3 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography3.jpg'
+const photo2 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography2.jpg'
+const photo1 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography1.jpg'
 
 export const projects = [1,2,3,4,5,6]
 

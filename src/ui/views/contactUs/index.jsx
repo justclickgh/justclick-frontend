@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
 import Layout from '../../layout/insex'
-import about2 from '../../../assets/images/about2.png'
 import { Col, Row } from 'react-bootstrap'
-import mail from '../../../assets/images/email_us.png'
-import call from '../../../assets/images/call.png'
-// import map from '../../../assets/images/map.png'
-import address from '../../../assets/images/address.png'
+
+
 import { Button, Card, Form, Input,  notification, Progress } from 'antd'
 import { useForm } from '../../../utils/hooks/use_form'
 import axios from 'axios'
 import { contactSendEmailPath } from '../../../utils/network_utils/endpoints'
+
+
+const about2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/about2.png'
+const mail = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/email_us.png'
+const call = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/call.png'
+// import map from '../../../assets/images/map.png'
+
+const address = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/address.png'
 const ContactUs = () => {
     const [values,handleChange] = useForm({
         message:"",

@@ -2,14 +2,13 @@ import { Button, Card,Image, Rate,Tag } from 'antd'
 
 import React from 'react'
 import { Col,Row } from 'react-bootstrap'
-import photo from '../../../../assets/images/photgraphy.jpg'
 
 
 export const planned_items = [
     {
         id:1,
         name:"Kingsley Adotey",
-        prifile_image:photo,
+        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics",
         jobs_done:15,
         rate:4,
         tags:[
@@ -22,7 +21,7 @@ export const planned_items = [
       {
         id:2,
         name:"Jesus Freak Ideas Event",
-        prifile_image:photo,
+        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics",
         jobs_done:20,
         rate:4,
         description:"We unsure you are linked to the best vendors in the country. We plan you events with and for you every step of the way because we do everything the right way",
@@ -35,7 +34,7 @@ export const planned_items = [
     {
         id:3,
         name:"Ristle",
-        prifile_image:photo,
+        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics",
         jobs_done:15,
         rate:4,
         description:"Boutique and wedding events. Styling, design, decoration and more",
@@ -48,7 +47,7 @@ export const planned_items = [
       {
         id:2,
         name:"Ash Evevnts",
-        prifile_image:photo,
+        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics",
         jobs_done:20,
         rate:4,
         description:"Wedding events. Styling, design, decoration and more",
@@ -82,7 +81,7 @@ const EventPlanners = () => {
             <Row>
                 {planned_items.slice(0,3).map(item=>      
             <Col  className = "my-2"  xs = "12" sm = "6" lg ="4"  >
-                <Card style = {{height:"420px"}} hoverable cover = { <Image  width = "100%" src={photo} alt="" srcset=""/>}  >
+                <Card style = {{height:"420px"}} hoverable cover = { <Image  width = "100%" src={"https://justclick-backend-statics.s3.amazonaws.com/fe-statics"} alt="" srcset=""/>}  >
                    <h6>{item.name}</h6>
                    <p className = "" style = {{lineHeight:".8rem",letterSpacing:".0001rem", fontSize:".85rem"}} >{item.description}</p>
                     <Row>

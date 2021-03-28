@@ -1,8 +1,11 @@
 import { Button } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import design2 from '../../../../assets/images/illustration_design.jpg'
 import '../styles/top-part.css'
+
+
+const design2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/images/illustration_design.jpg'
+
 const TopPart = () => {
     return (
             
