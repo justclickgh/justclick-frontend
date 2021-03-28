@@ -34,7 +34,7 @@ jobs:
           script: |
             cd justclick
             npm install
-             node --max-old-space-size=4096 index.js
+             node --max-old-space-size=4096 src/index.js
             npm run build --if-present
             sudo cp -r build/* /var/www/html/justclick
             sudo systemctl restart nginx
