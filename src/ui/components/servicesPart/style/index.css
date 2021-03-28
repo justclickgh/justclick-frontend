@@ -1,0 +1,27 @@
+.main-flx{
+    display: flex;
+    justify-content: center;
+}
+#card{
+    width: 300px;
+     height: 550px;
+}
+
+@media(min-width:1504px){
+    #card{
+        width: 350px;
+       
+    }
+    .flx-2{
+        display: flex;
+    }
+}
+@media(max-width:600px){
+.main-flx{
+    flex-direction: column;
+    /* margin-right: 4em; */
+}
+#card{
+    width: 100%;
+}
+}

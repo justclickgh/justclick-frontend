@@ -1,0 +1,29 @@
+.wrapper-2{
+
+    display: flex;
+    overflow-x: scroll;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+  
+    
+
+}
+
+.wrapper-2::-webkit-scrollbar{
+    width: 0;
+}
+
+.item{
+    margin-right: 1em;
+}
+.my-contanter {
+    width: 85%;
+    margin: auto;
+}
+@media(max-width:1024px){
+.my-contanter {
+    width: 100%;
+    margin: auto;
+}
+}

@@ -1,0 +1,18 @@
+.flex-scroll-x{
+    width: 100%;
+    display: flex;
+    /* overflow-x: scroll; */
+}
+
+.top-part {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media(max-width:1300px){
+    .flex-scroll-x{
+        overflow-x: scroll;
+    }
+}

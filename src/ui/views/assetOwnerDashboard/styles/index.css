@@ -1,0 +1,34 @@
+/* 
+
+
+.flex{
+    display: flex;
+    justify-content: last baseline;
+}
+#side-bar{
+    width: 256px;
+    height: 100vh;
+}
+
+#main{
+    width: calc( 100vw - 256px );
+
+
+
+}
+.logo{
+    width: 70%;
+}
+
+@media(max-width:900px){
+    #side-bar{
+    width: 100px;
+}
+#main{
+    width: calc( 100vw - 100px );
+
+}
+.logo{
+     width: 100%;
+}
+} */

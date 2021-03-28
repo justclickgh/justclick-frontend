@@ -1,0 +1,10 @@
+.image-part img{
+    width: 50%;
+    margin: auto;
+}
+.image-part{
+    text-align: center;
+}
+.footer-part p{
+    color: rgb(110, 108, 108);
+}

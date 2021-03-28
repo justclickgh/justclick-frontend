@@ -1,0 +1,12 @@
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+}
+.footer-copyright p{
+    color: #ffffff;
+    line-height: 0;
+}
+.footer-copyright a{
+    color: #4337af;
+    line-height: 0;
+}

@@ -1,0 +1,115 @@
+.wrapper{
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    /* background-image: url("../../../../assets/images/networking.jpg"); */
+}
+.item-1{
+    background-image: url("../../../../assets/images/networking.jpg");
+
+}
+.item-2{
+    background-image: url("../../../../assets/images/event-planner.jpg");
+
+}
+
+.item-3{
+    background-image: url("../../../../assets/images/development.jpg");
+
+}
+.item-4{
+    background-image: url("../../../../assets/images/photgraphy.jpg");
+
+}
+
+.overley
+{
+    z-index: 1000;
+    height: 90vh;
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(49, 48, 48,.4);
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    padding: 2em ;
+    text-align: start;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.top-part {
+    width: 50%;
+}
+.top-part h2{
+    text-transform: capitalize;
+    color: rgb(104, 252, 104);
+
+}
+
+
+.top-part2 h5{
+    color: #fff;
+    width: 70%;
+
+}
+.footer{
+    width: 60%;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+@media(max-width:600px){
+    .top-part h2{
+        font-size: 1.5rem;
+    }
+    .top-part2 h5{
+        font-size: 1rem;
+    }
+.footer{
+    width: 70%;
+}
+.inner{
+    width: 80%;
+    margin-left: 0%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.search-part{
+    /* height: 200px; */
+    margin: 4em 0em  4em 4em;
+    display: flex;
+}
+.padding{
+    padding: 4em 0;
+}
+
+.push{
+    padding: 15em;
+}
+
+
+@media(max-width:600px){
+    .search-part{
+        display: none;
+        margin: 1em;
+        display: flex;
+    }
+    
+    }
+    

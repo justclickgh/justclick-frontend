@@ -1,0 +1,13 @@
+.testimonial-part{
+    background-color: rgb(227, 227, 233);
+    color: rgb(94, 92, 92);
+}
+.wrapper{
+    padding: 1em;
+    height: 400px;
+    text-align: center;
+}
+
+.header{
+    color: rgb(94, 92, 92);
+}
