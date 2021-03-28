@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import '../styles/top-part.css'
 
 
-const design2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/images/illustration_design.jpg'
+const design2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/illustration_design.jpg'
 
 const TopPart = () => {
     return (
