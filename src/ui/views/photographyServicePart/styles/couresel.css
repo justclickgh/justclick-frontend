@@ -14,32 +14,32 @@
 }
 
 .item-10{
-    background-image: url(../../../../assets/images/interior_hotography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/interior_hotography.jpg");
 }
 .item-9{
-    background-image: url(../../../../assets/images/food_photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/food_photography.jpg");
 }
 .item-11{
-    background-image: url(../../../../assets/images/7\ 3.\ Portrait\ Photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/7\ 3.\ Portrait\ Photography.jpg");
 }
 
 .item-12{
-    background-image: url(../../../../assets/images/8\ 4.\ Event\ Photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/8\ 4.\ Event\ Photography.jpg");
 }
 
 .item-5{
-    background-image: url(../../../../assets/images/9\ 5.\ Documentary\ Photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/9\ 5.\ Documentary\ Photography.jpg");
 }
 
 .item-6{
-    background-image: url(../../../../assets/images/10\ 6.\ Arerial\ Photography.jpeg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/10\ 6.\ Arerial\ Photography.jpeg");
 }
 
 .item-7{
-    background-image: url(../../../../assets/images/11\ 7.\ Commercial\ Photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/11\ 7.\ Commercial\ Photography.jpg");
 }
 .item-8{
-    background-image: url(../../../../assets/images/12\ 8.\ Corperate\ Photography.jpg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/12\ 8.\ Corperate\ Photography.jpg");
 }
 
 

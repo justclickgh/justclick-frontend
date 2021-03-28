@@ -4,13 +4,13 @@ import { Image ,Button,Card, Rate, Tag} from 'antd'
 import React from 'react'
 
 import { Col, Row } from 'react-bootstrap'
-import arerial_photography from '../../../../assets/images/10 6. Arerial Photography.jpeg'
-import food_photography from '../../../../assets/images/food_photography.jpg'
-import docmentation_photography from '../../../../assets/images/9 5. Documentary Photography.jpg'
-import event_photography from '../../../../assets/images/8 4. Event Photography.jpg'
-import commecial_photography from '../../../../assets/images/11 7. Commercial Photography.jpg'
-import coperate_photography from '../../../../assets/images/12 8. Corperate Photography.jpg'
-import potrait_photography from '../../../../assets/images/7 3. Portrait Photography.jpg'
+const arerial_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/10 6. Arerial Photography.jpeg'
+const food_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/food_photography.jpg'
+const docmentation_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/9 5. Documentary Photography.jpg'
+const event_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/8 4. Event Photography.jpg'
+const commecial_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/11 7. Commercial Photography.jpg'
+const coperate_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/12 8. Corperate Photography.jpg'
+const potrait_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/7 3. Portrait Photography.jpg'
 
 
 export  const photo_items = [

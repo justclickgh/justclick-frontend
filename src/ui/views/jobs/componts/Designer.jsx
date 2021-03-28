@@ -8,10 +8,11 @@ import '../styles/projects-part.css'
 // import { projects } from './photography-part'
 
 
-import photo3 from '../../../../assets/images/design-7.JPG'
-import photo2 from '../../../../assets/images/design-2.JPG'
-import photo1 from '../../../../assets/images/design-3.JPG'
-import photo4 from '../../../../assets/images/design-4.JPG'
+const photo3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-7.JPG'
+
+const photo2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-2.JPG'
+const photo1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-3.JPG'
+const photo4 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-4.JPG'
 
 
 const projects = [

@@ -1,5 +1,5 @@
-import testimony1 from '../assets/images/testimonial-1.jpeg'
-import testimony2 from '../assets/images/testimonial-2.jpeg'
+const testimony1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/testimonial-1.jpeg'
+const testimony2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/testimonial-2.jpeg'
 export const testimonies = [
     {
         id :1,

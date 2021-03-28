@@ -1,12 +1,14 @@
 import { Button, Card, Divider, Empty, Form, Image, Input, Pagination, Rate, Tag } from 'antd'
 import React, { useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import photo from '../../../../assets/images/Julius.jpg'
-import photo2 from '../../../../assets/images/Isaac.jpg'
-import photo3 from '../../../../assets/images/Jeremaih.jpg'
-import photo4 from '../../../../assets/images/Micheal.jpeg'
-
 import { searchthroughArray } from '../../../../utils/search-through-array'
+
+const photo = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Julius.jpg'
+const photo2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Isaac.jpg'
+const photo3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Jeremaih.jpg'
+const photo4 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Micheal.jpeg'
+
+
 
 const items = [
     {
