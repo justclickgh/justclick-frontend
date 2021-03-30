@@ -2,7 +2,7 @@ import config from "../../config";
 
 const getBasePath =()=>{
 if( config.staging){
-return "http://54.184.53.196"
+return "http://100.25.136.233"
 }
 else {
     return "http://127.0.0.1:8000"

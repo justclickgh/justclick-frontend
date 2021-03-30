@@ -4,24 +4,25 @@ import {Route,BrowserRouter as Router,Switch} from 'react-router-dom'
 import Login from './ui/views/login';
 import SignUp from './ui/views/registration';
 import About from './ui/views/about';
-import DashBoard from './ui/views/dashnoard';
 import NoMatch from './ui/views/noMatch';
 import PaystackHookExample from './ui/views/payment/pay-hook';
-import creativePersonDashboard from './ui/views/creativePersonDashboard';
 import { BackTop } from 'antd';
 import MainJobsPage from '../src/ui/views/jobs/index'
 import TopFreeLancersPage from './ui/views/top-freelancers';
 import GraphicDesignServicePage from './ui/views/graphicDesignServicePage';
 import PhotographyServicePart from './ui/views/photographyServicePart';
 import Accets from './ui/views/assets';
-import AssetOwnerDashbard from './ui/views/assetOwnerDashboard';
 import EventPlanningServicePage from './ui/views/eventPlanningServicePage';
 import AboutUs from './ui/views/aboutUs';
 import ContactUs from './ui/views/contactUs';
 import TermaAndConditions from './ui/views/termsAndConditions';
 import DevelopmentServicePage from './ui/views/developmentServicePage';
 import { UpOutlined } from '@ant-design/icons';
-
+import { connect } from 'react-redux';
+import { setUserType } from './redux/actions/app_state_types';
+import { useCallback, useEffect } from 'react';
+import { getLocalUserType } from './utils/local_objects/loacal_storage';
+import ProtectedDashboardRoutes from './ui/protected_routes'
 
 const style = {
   height: 40,
@@ -33,30 +34,34 @@ const style = {
   textAlign: 'center',
   fontSize: 14,
 };
-function App() {
-  const getCurUserType = ()=>{
-    let user_type = null
-    try {
-      user_type =  JSON.parse(localStorage.getItem('user_type'))
-    } catch (error) {
-      user_type  = null
-    }
-    console.log(user_type);
-    return user_type
-  }
 
-  const user_dashborad = ()=>{
-    const user_type = getCurUserType()
-    console.log(user_type);
 
-    if(user_type === "is_freelancer"){
-      return "/freelancer-dashboard";
-    }else if(user_type ==="normal_user"){
-      return "/user-dashboard";
-    }else{
-     return"/user-dashboard"
+
+
+
+
+
+function App({appState,setUserType}) {
+  const getUserType =useCallback( ()=>{
+    
+    let userType = appState.userType
+    if(userType === null){
+      userType  = getLocalUserType()
+      if(userType === null){
+        return null
+      }
+      setUserType(userType)
     }
-  }
+    return userType
+  },[appState.userType,setUserType])
+
+
+useEffect(() => {
+  getUserType()
+}, [getUserType])
+
+
+
   
   return (
     <Router>
@@ -79,12 +84,11 @@ function App() {
        <Route path = '/top-freelancers' component = {TopFreeLancersPage}/>
        <Route exact path = "/signup" component = {SignUp} />
        <Route exact path = "/about" component = {About} />
-       <Route  path = "/user-dashboard" component = {DashBoard} />
-       <Route  path   = "/freelancer-dashboard" component = {creativePersonDashboard}/>
-       <Route  path   = "/asset-owner-dashboard" component = {AssetOwnerDashbard}/>
-       <Route  path   = "/dashboard" render = {()=>{
-         window.location = user_dashborad()
-       }}/>
+       <Route path = "/dashboard"  >
+         <ProtectedDashboardRoutes />
+       </Route>
+
+   
        <Route path = "/pay" component ={PaystackHookExample} />
         <Route component={NoMatch} /> 
      </Switch>
@@ -93,4 +97,16 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state=>{
+  return {
+    appState:state.appState
+  }
+}
+
+const mapDispatchToProps = dispatch=>{
+  return {
+      setUserType :(type)=> dispatch(setUserType(type))
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);

@@ -8,7 +8,7 @@ export const planned_items = [
     {
         id:1,
         name:"Kingsley Adotey",
-        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics",
+        prifile_image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Kingsley.jpg",
         jobs_done:15,
         rate:4,
         tags:[
@@ -81,7 +81,7 @@ const EventPlanners = () => {
             <Row>
                 {planned_items.slice(0,3).map(item=>      
             <Col  className = "my-2"  xs = "12" sm = "6" lg ="4"  >
-                <Card style = {{height:"420px"}} hoverable cover = { <Image  width = "100%" src={"https://justclick-backend-statics.s3.amazonaws.com/fe-statics"} alt="" srcset=""/>}  >
+                <Card style = {{height:"420px"}} hoverable cover = { <Image  width = "100%" src={item.prifile_image} alt="" srcset=""/>}  >
                    <h6>{item.name}</h6>
                    <p className = "" style = {{lineHeight:".8rem",letterSpacing:".0001rem", fontSize:".85rem"}} >{item.description}</p>
                     <Row>

@@ -1,5 +1,5 @@
  const config = {
-    staging:false,
+    staging:true,
     pruduction:false
 }
 export default config

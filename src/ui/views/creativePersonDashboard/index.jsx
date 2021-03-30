@@ -8,7 +8,7 @@ import {
   MenuOutlined,
 } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import {Link, Route,Switch} from 'react-router-dom'
+import {Link, Route,Switch, withRouter} from 'react-router-dom'
 import JobsPart from './components/jobs';
 import ProfilePart from './components/profile';
 import './assets/sideBar.css'
@@ -194,4 +194,4 @@ function mapDispatchToProps(dispatch) {
 
   } ;
 }
-export default connect(mapStateToProps,mapDispatchToProps)(CreativePersonDashboard)
+export default connect(mapStateToProps, mapDispatchToProps)( withRouter((CreativePersonDashboard)))
