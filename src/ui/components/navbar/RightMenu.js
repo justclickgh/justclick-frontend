@@ -51,7 +51,7 @@ const RightMenu = ({mode}) => {
                    <Link to = "/asset_owner" >Getting Started</Link>
                  </Menu.Item>
                  <Menu.Item key  = "1">
-                   <Link to = "/asset_owner/register" >Assets download registration</Link>
+                   <Link to = "/asset_owner/register" >Assets Uploader registration</Link>
                  </Menu.Item>
                  </Menu.SubMenu>
 

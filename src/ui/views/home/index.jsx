@@ -18,7 +18,7 @@ const HomePage = () => {
       {/* <StepsPart/>
       <StepsPart2/> */}
       <HowItWorks/>
-      <HowItWorks2/>
+      {/* <HowItWorks2/> */}
       <TestimonialPart/>
       <OurPrevWorkPart/>
         </Layout>

@@ -26,6 +26,8 @@ import ProtectedDashboardRoutes from './ui/protected_dashboard_routes'
 import AssetOwnerRegistrationPage from './ui/views/asset_owner_registration_page';
 import FreelancerRegistrationPage from './ui/views/creative_person_resgistation_page';
 import ProtectedRoute from './ui/views/protected_routes';
+import AssetsUploader from './ui/views/assetsUploaderPage';
+import FreelancerPage from './ui/views/freelancerPage';
 
 const style = {
   height: 40,
@@ -86,8 +88,9 @@ useEffect(() => {
        <Route exact path = "/login" component = {Login} />
        <Route path = '/top-freelancers' component = {TopFreeLancersPage}/>
        <Route exact path = "/signup" component = {SignUp} />
+       <Route exact path = "/asset_owner" component = {AssetsUploader} />
+       <Route exact path = "/freelancer" component = {FreelancerPage} />
        <Route exact path = "/about" component = {About} />
-
        <Route path = "/asset_owner/register">
           <ProtectedRoute component = {AssetOwnerRegistrationPage} />
        </Route>

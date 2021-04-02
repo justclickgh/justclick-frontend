@@ -161,7 +161,7 @@ const FreelancerRegistrationPage = () => {
                                                 <div className="fieldset1">
                                                     
                                                        
-                                                            <Form.Item label="Tage"  >
+                                                            <Form.Item label="ADD TAGS"  >
                                                                 <Select
                                                                 mode = "multiple"
                                                                 >
