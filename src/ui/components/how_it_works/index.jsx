@@ -2,13 +2,15 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import {CustomNoImageCard} from '../../../utils/ui_utils/card'
 import { CheckOutlined, InfoCircleOutlined, PlusCircleOutlined, ProfileOutlined, UserAddOutlined } from '@ant-design/icons'
-import register from '../../../assets/images/register.png'
-import post_job from '../../../assets/images/post_job.png'
-import price from '../../../assets/images/price.png'
-import account from '../../../assets/images/account.png'
-import payment from '../../../assets/images/payment.png'
 
-import confirm from '../../../assets/images/confirm.png'
+
+const register = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/register.png'
+const post_job = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/post_job.png'
+const price = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/price.png'
+const account = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/account.png'
+const payment = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/payment.png'
+
+const confirm = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/confirm.png'
 
 
 const HowItWorks = () => {

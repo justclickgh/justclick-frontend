@@ -1,7 +1,9 @@
 import React from 'react'
 import Layout from '../../layout/insex'
-import about2 from '../../../assets/images/about_us.png'
 import { Col, Row } from 'react-bootstrap'
+
+const about2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/about_us.png'
+
 const AboutUs = () => {
     return (
         <div>

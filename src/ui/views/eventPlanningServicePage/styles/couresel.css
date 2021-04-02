@@ -13,17 +13,17 @@
 }
 
 .item-1{
-    background-image: url(../../../../assets/images/wedding_planning.jpeg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/wedding_planning.jpeg");
 }
 .item-2{
-    background-image: url(../../../../assets/images/party_planning.jpeg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/party_planning.jpeg");
 }
 .item-3{
-    background-image: url(../../../../assets/images/event_planning2.jpeg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event_planning2.jpeg");
 }
 
 .item-4{
-    background-image: url(../../../../assets/images/event_planning.jpeg);
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event_planning.jpeg");
 }
 
 .inner2{

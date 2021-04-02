@@ -1,10 +1,10 @@
 import { Image, Button, Card, Rate, Tag } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import desing1 from '../../../../assets/images/Christopher.jpg'
-import desing2 from '../../../../assets/images/Brown Curtis.jpg'
-import desing3 from '../../../../assets/images/Kingsley.jpg'
-import desing4 from '../../../../assets/images/Phil Ayaric.jpg'
+const desing1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Christopher.jpg'
+const desing2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Brown Curtis.jpg'
+const desing3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Kingsley.jpg'
+const desing4 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Phil Ayaric.jpg'
 // import {items} from '../../eventPlanningServicePage/components/event-planners'
 
 

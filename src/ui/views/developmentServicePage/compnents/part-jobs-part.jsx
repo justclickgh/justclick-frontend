@@ -1,7 +1,7 @@
 import { Image ,Button,Card, Divider, Rate} from 'antd'
 import React from 'react'
 import {  Col, Row } from 'react-bootstrap'
-import desing1 from '../../../../assets/images/ui-1.webp'
+// import desing1 from '../../../../assets/images/ui-1.webp'
 import {planned_items} from '../../eventPlanningServicePage/components/event-planners'
 
 const PastJobsPart = () => {
@@ -25,7 +25,7 @@ const PastJobsPart = () => {
             <Row>
                 {planned_items.slice(0,3).map(item=>                
                 <Col  className = "my-2"  xs = "12" sm = "6" lg ="4" >
-                <Card  cover = {<Image  preview = {true} width = "100%" src={desing1} alt="" srcset=""/>} >
+                        <Card cover={<Image preview={true} width="100%" src="https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp" alt="" srcset=""/>} >
                     <Card.Meta title = "Some title given randmly" description  = " sit amet consectetur, adipisicing elit. Labore modi nemo amet, fugit totam error maxime quis beatae cumque quidem eaque, corporis dicta, itaque optio commodi."  />
                     <Divider/>
                     <small>Posted at: 20-12-2020 </small>

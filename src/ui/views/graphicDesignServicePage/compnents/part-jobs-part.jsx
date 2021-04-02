@@ -1,19 +1,21 @@
 import { Image ,Button,Card, Tag} from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import desing2 from '../../../../assets/images/design-2.JPG'
-import desing3 from '../../../../assets/images/design-3.JPG'
-import desing4 from '../../../../assets/images/design-4.JPG'
-import desing5 from '../../../../assets/images/17 Visual Identity.jpg'
-import desing6 from '../../../../assets/images/design-7.JPG'
 
-import publication_design from '../../../../assets/images/19 publication Design.jpg'
-import packaging_design from '../../../../assets/images/20 Packaging Design.jpg'
-import advertisment_design from '../../../../assets/images/design-4.JPG'
-import visual_identity from '../../../../assets/images/17 Visual Identity.jpg'
-import motion_design from '../../../../assets/images/21 motion Design.jpg'
-import evironment_design from '../../../../assets/images/22 Enviromental Design.jpg'
-import illustrotion_design from '../../../../assets/images/illustration_design.jpg'
+
+const desing2 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-2.JPG'
+const desing3 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-3.JPG'
+const desing4 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-4.JPG'
+const desing5 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/17 Visual Identity.jpg'
+const desing6 =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-7.JPG'
+
+const publication_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/19 publication Design.jpg'
+const packaging_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/20 Packaging Design.jpg'
+const advertisment_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design-4.JPG'
+const visual_identity =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/17 Visual Identity.jpg'
+const motion_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/21 motion Design.jpg'
+const evironment_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/22 Enviromental Design.jpg'
+const illustrotion_design =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/illustration_design.jpg'
 
 
 export const design_items = [

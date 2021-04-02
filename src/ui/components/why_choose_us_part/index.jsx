@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import problemSolving from "../../../assets/images/problem_solving.png"
 import CustomRandomButtom from '../../../utils/custom_random_buttom'
 
+const problemSolving = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/problem_solving.png"
 const WhyChooseUsePart = () => {
     return (
            <div className = "my-5">

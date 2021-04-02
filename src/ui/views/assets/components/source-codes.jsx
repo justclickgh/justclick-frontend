@@ -1,19 +1,19 @@
 import { Card, Image ,Button,Divider, Pagination, Input, Empty} from 'antd'
 import React, { useEffect, useState } from 'react'
-import image3 from '../../../../assets/images/ui-3.webp'
-import image2 from '../../../../assets/images/ui-2.webp'
-import image1 from '../../../../assets/images/ui-1.webp'
 import {  Col, Container, Row } from 'react-bootstrap'
 import { DownloadOutlined, EyeOutlined } from '@ant-design/icons'
 import Banner from './banner'
 import { connect } from 'react-redux'
 import { fetchAllAssets } from '../../../../redux/actions/asset_actions'
 
+
+const image2 = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-2.webp"
+const image3 = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-3.webp"
 export const codes = [
     {
         "id":"1",
         'title':"Sample tile of source code",
-        'image':image1,
+        'image':"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
         "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, dolor dolore adipisci nemo delectus expedita perspiciatis sit. Facere unde fuga architecto voluptatum? Reprehenderit nemo, sunt iusto corrupti ab quasi excepturi!",
         type:"MOBILE APPLICATION"
     },
@@ -34,7 +34,7 @@ export const codes = [
         {
         "id":"4",
         'title':"Sample tile of source code",
-        'image':image1,
+        'image':"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
         "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, dolor dolore adipisci nemo delectus expedita perspiciatis sit. Facere unde fuga architecto voluptatum? Reprehenderit nemo, sunt iusto corrupti ab quasi excepturi!",
         type:"MOBILE APPLICATION"
     },

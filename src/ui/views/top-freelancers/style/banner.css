@@ -1,5 +1,5 @@
 .banner-wrapper{
-    background-image: url('../../../../assets/images/networking.jpg');
+    background-image: url('https://justclick-backend-statics.s3.amazonaws.com/fe-statics/networking.jpg');
     height: 70vh;
     background-position: right;
     background-repeat: no-repeat;

@@ -1,13 +1,12 @@
 import React from 'react'
 import Banner from './banner'
-import photo1 from '../../../../assets/images/photography1.jpg'
-import photo2 from '../../../../assets/images/photography2.jpg'
-import photo3 from '../../../../assets/images/photography3.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Button, Card, Image } from 'antd'
 import { DownloadOutlined, EyeOutlined } from '@ant-design/icons'
 
-
+const photo1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography1.jpg'
+const photo2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography2.jpg'
+const photo3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography3.jpg'
 
 export const photos = [
     {

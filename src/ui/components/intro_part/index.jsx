@@ -1,8 +1,10 @@
 import React from 'react'
 import {Col, Container, Row } from 'react-bootstrap'
-import creative from '../../../assets/images/creative.png'
 import '../../../assets/css/intro_part.css'
 import { Button } from 'antd'
+
+
+const creative = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/creative.png'
 
 const IntroPart = () => {
     return (

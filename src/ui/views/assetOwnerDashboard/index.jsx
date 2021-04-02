@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './styles/index.css'
-import {Switch,Route, useHistory} from 'react-router-dom'
+import {Switch,Route, useHistory, withRouter} from 'react-router-dom'
 import StatisticsPage from './components/statistics'
 import AssetsPage from './components/aseets-page'
 import EarningsPart from './components/earnings-part'
@@ -161,4 +161,4 @@ const mapDispatchToProps = dispatch =>{
         fethAssets:()=> dispatch(fetchCurrentUserAsset())
     }
 }
-export default connect(mapStateToPRops,mapDispatchToProps)(AssetOwnerDashbard)
+export default connect(mapStateToPRops, mapDispatchToProps)(withRouter(AssetOwnerDashbard))

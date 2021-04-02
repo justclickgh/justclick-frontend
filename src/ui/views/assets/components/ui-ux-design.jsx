@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
-import ui1 from "../../../../assets/images/ui-1.webp"
-import ui2 from "../../../../assets/images/ui-2.webp"
-import ui3 from "../../../../assets/images/ui-3.webp"
 import { Button, Card, Divider, Empty, Image, Input, Pagination } from 'antd';
 import { Container,Col ,Row} from 'react-bootstrap'; 
 import { ShoppingCartOutlined,EyeOutlined } from '@ant-design/icons';
 import Banner from './banner';
 
-
+const ui2 = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-2.webp"
+const ui3 = "https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-3.webp"
 export const uiUxs = [
   {
     id:1,
-    image:ui1,
+    image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
     title:"Some title gaiven random",
     tags:[
       'ui/ux design',
@@ -46,7 +44,7 @@ export const uiUxs = [
   },
       {
     id:4,
-    image:ui1,
+    image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
   title:"Some title gaiven random",
       tags:[
     'ui/ux design',
@@ -112,7 +110,7 @@ export const uiUxs = [
   },
         {
     id:7,
-    image:ui1,
+    image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
   title:"Some title gaiven random",
         tags:[
       'ui/ux design',
@@ -178,7 +176,7 @@ export const uiUxs = [
   },
         {
     id:7,
-    image:ui1,
+    image:"https://justclick-backend-statics.s3.amazonaws.com/fe-statics/ui-1.webp",
   title:"Some title gaiven random",
         tags:[
       'ui/ux design',

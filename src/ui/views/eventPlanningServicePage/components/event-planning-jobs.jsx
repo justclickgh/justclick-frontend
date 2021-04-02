@@ -4,13 +4,13 @@ import { Image ,Button,Card, Rate, Tag} from 'antd'
 import React from 'react'
 
 import { Col, Row } from 'react-bootstrap'
-import wedding_planning from '../../../../assets/images/wedding_planning.jpeg'
-import wedding_planning2 from '../../../../assets/images/wedding_planning2.jpeg'
-import party_planning from '../../../../assets/images/party_planning2.jpeg'
-import party_planning2 from '../../../../assets/images/party_planning2.jpeg'
-import event_planning from '../../../../assets/images/event_planning3.jpeg'
-import event_planning2 from '../../../../assets/images/event_planning2.jpeg'
-import event_planning3 from '../../../../assets/images/event_planning3.jpeg'
+const wedding_planning = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/wedding_planning.jpeg'
+const wedding_planning2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/wedding_planning2.jpeg'
+const party_planning = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/party_planning2.jpeg'
+const party_planning2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/party_planning2.jpeg'
+const event_planning = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event_planning3.jpeg'
+const event_planning2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event_planning2.jpeg'
+const event_planning3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event_planning3.jpeg'
 
 
 export const planned_designs =[

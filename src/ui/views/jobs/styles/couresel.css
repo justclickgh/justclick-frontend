@@ -5,23 +5,23 @@
     background-repeat: no-repeat;
     background-position: right;
 
-    /* background-image: url("../../../../assets/images/networking.jpg"); */
 }
+
 .item-1{
-    background-image: url("../../../../assets/images/networking.jpg");
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/networking.jpg");
 
 }
 .item-2{
-    background-image: url("../../../../assets/images/event-planner.jpg");
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/event-planner.jpg");
 
 }
 
 .item-3{
-    background-image: url("../../../../assets/images/development.jpg");
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/development.jpg");
 
 }
 .item-4{
-    background-image: url("../../../../assets/images/photgraphy.jpg");
+    background-image: url("https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photgraphy.jpg");
 
 }
 

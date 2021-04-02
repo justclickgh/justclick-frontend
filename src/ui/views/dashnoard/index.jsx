@@ -9,12 +9,11 @@ import {
 
 } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import { Link, Route, Switch, useHistory } from 'react-router-dom'
+import { Link, Route, Switch, useHistory, withRouter } from 'react-router-dom'
 import JobsPart from './components/jobs';
 import ProfilePart from './components/profile';
 import './assets/sideBar.css'
 import './assets/header.css'
-import handleRedirect from '../../../utils/handle_redirect';
 import StatisticsPart from './components/statistics';
 import { getAllPendingJobs, getCurUserJobs } from '../../../redux/actions/cur_user_jobs_actions';
 import { postJob } from '../../../redux/actions/job_actions';
@@ -32,15 +31,12 @@ const { Content, Footer } = Layout;
 const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentUserProfile, match }) => {
   const history = useHistory()
   useEffect(() => {
-    const status = handleRedirect()
-    if (status) {
-      history.push('/login', { next: match.url })
-    }
+
     getJobs()
     fetchJobStatistics()
     getAllPendingJobs()
     getCurrentUserProfile()
-  }, [getJobs, fetchJobStatistics, getCurrentUserProfile, getAllPendingJobs, match.url, history])
+  }, [getJobs, fetchJobStatistics, getCurrentUserProfile, getAllPendingJobs])
   const [state, setState] = useState({
     visible: false,
     loguotModalVisible: false
@@ -167,5 +163,5 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(DashBoard)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(DashBoard))
 

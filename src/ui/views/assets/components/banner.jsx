@@ -1,8 +1,9 @@
 import { Button } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import design2 from '../../../../assets/images/design2.png'
 import '../styles/top-part.css'
+
+const design2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/design2.png'
 const Banner = () => {
     return (
             
