@@ -91,11 +91,11 @@ useEffect(() => {
        <Route exact path = "/asset_owner" component = {AssetsUploader} />
        <Route exact path = "/freelancer" component = {FreelancerPage} />
        <Route exact path = "/about" component = {About} />
-       <Route path = "/asset_owner/register">
+       <Route exact path = "/asset_owner/register">
           <ProtectedRoute component = {AssetOwnerRegistrationPage} />
        </Route>
 
-          <Route path = "/freelancer/register">
+          <Route exact path = "/freelancer/register">
           <ProtectedRoute component = {FreelancerRegistrationPage} />
        </Route>
 
