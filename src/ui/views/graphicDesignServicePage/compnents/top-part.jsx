@@ -1,6 +1,7 @@
 import { Button } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import '../styles/top-part.css'
 
 
@@ -21,7 +22,10 @@ const TopPart = () => {
                     <p className = "title-paragraphy">Graphic designers are trained to be able to inform, persuade, direct, organize, entertain and attract attention with their designs. They combine art and technology in order to communicate a message. 
                     They do this through the strategic placement of images and text.
                     </p>
-                     <Button href = "/services/graphic-design/all-jobs"  id = "footer-btn" className = "mr-1"     style = {{backgroundColor:" rgb(70, 170, 70)",color:"#fff",width:"300px",height:"45px",paddingTop:".5em"}}  shape = "round" >See Our Best works</Button>
+                    <Link to="/services/graphic-design/all-jobs" >
+                        <Button id="footer-btn" className="mr-1" style={{ backgroundColor: " rgb(70, 170, 70)", color: "#fff", width: "300px", height: "45px", paddingTop: ".5em" }} shape="round" >See Our Best works</Button>
+
+                    </Link>
 
 
                 </Col>

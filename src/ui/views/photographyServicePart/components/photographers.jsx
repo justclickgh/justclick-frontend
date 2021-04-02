@@ -1,6 +1,7 @@
 import { Button, Card,Image, Rate, Tag } from 'antd'
 import React from 'react'
 import { Col,Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 const photo = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Julius.jpg'
 const photo2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Isaac.jpg'
 const photo3 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/Jeremaih.jpg'
@@ -74,9 +75,12 @@ const Photographers = () => {
 
                     </Col>
                     <Col sm = "4">
-                          <Button href = "/services/photography/list-photographers" style = {{color:"green",border:"none",position:"absolute",right:"15%"}} >
-                                View all
+                    <Link to="/services/photography/list-photographers" >
+                        <Button  style={{ color: "green", border: "none", position: "absolute", right: "15%" }} >
+                            View all
                         </Button>
+                        </Link>
+                        
 
                     </Col>
             </Row>

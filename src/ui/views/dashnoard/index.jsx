@@ -104,7 +104,10 @@ const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentU
                     <Row>
                       <Col sm="12">
                         <hr />
-                        <Button href="/user-dashboard/profile" style={{ width: "100%", border: "none" }} > Profile </Button>
+                        <Link to="/user-dashboard/profile" >
+                          <Button style={{ width: "100%", border: "none" }} > Profile </Button>
+
+                        </Link>
                         <hr />
                       </Col>
 

@@ -128,7 +128,10 @@ confirm (){
                     <Row>
                     <Col sm = "12">
                         <hr/>
-                    <Button href = "/freelancer-dashboard/profile" style = {{width : "100%",border:"none"}} > Profile </Button>
+                      <Link to="/freelancer-dashboard/profile">
+                        <Button style={{ width: "100%", border: "none" }} > Profile </Button>
+
+                        </Link>
                     <hr/>
                     </Col>
                     

@@ -5,23 +5,23 @@ import '../styles/couresel.css'
 
 const jobs = [
   {
-    id:1,
-    title:"Ui/Ux design"
+    id: 1,
+    title: "Ui/Ux design"
   },
-    {
-    id:1,
-    title:"Mobile App"
+  {
+    id: 1,
+    title: "Mobile App"
   },
-    {
-    id:1,
-    title:"Design"
+  {
+    id: 1,
+    title: "Design"
   },
-    {
-    id:1,
-    title:"Ui/Ux design"
-  },  {
-    id:1,
-    title:"Ui/Ux design"
+  {
+    id: 1,
+    title: "Ui/Ux design"
+  }, {
+    id: 1,
+    title: "Ui/Ux design"
   }
 ]
 
@@ -43,7 +43,7 @@ const searchResult = (query) => {
   //           <span>
   //             Found {query} on{' '}
   //             <a
-  //               href={`https://s.taobao.com/search?q=${query}`}
+  //               ={`https://s.taobao.com/search?q=${query}`}
   //               target="_blank"
   //               rel="noopener noreferrer"
   //             >
@@ -56,39 +56,27 @@ const searchResult = (query) => {
   //     };
   //   });
 
-  return jobs.filter(item=>item.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())).map((item,index)=>
+  return jobs.filter(item => item.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())).map((item, index) => {
+    return {
+      value: item,
+      label: (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          <p> {`${index} ${item.title}  `} </p>
 
-{
-  return {
-    value :item,
-    label:(
-                  <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-              <p> {`${index} ${item.title}  `} </p>
 
-            
-            {/* <span>
-              Found {query} on{' '}
-              <a
-                href={`https://s.taobao.com/search?q=${query}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.title}
-              </a>
-            </span>
-            <span>{getRandomInt(200, 100)} results</span> */}
-          </div>
-    )
+         
+        </div>
+      )
+    }
   }
-}
   )
 
-  }
+}
 
 
 
@@ -105,28 +93,28 @@ const SearchPart = () => {
   };
 
   return (
-      <div className="bg-light">
+    <div className="bg-light">
 
-     
-    <div className="search-part container py-4 push ">
+
+      <div className="search-part container py-4 push ">
         <div className="label-part mr-3 mt-2 ">
-        {/* <h4>Seach For Projects</h4> */}
+          {/* <h4>Seach For Projects</h4> */}
         </div>
 
         <AutoComplete
-      dropdownMatchSelectWidth={252}
-      style={{
-        width: 300,
-      }}
-      options={options}
-      onSelect={onSelect}
-      onSearch={handleSearch}
-    >
-    
-      <Input.Search style = {{width:"300px"}} size="large" placeholder="Search For Project"/>
-    </AutoComplete>
-    
-    </div>
+          dropdownMatchSelectWidth={252}
+          style={{
+            width: 300,
+          }}
+          options={options}
+          onSelect={onSelect}
+          onSearch={handleSearch}
+        >
+
+          <Input.Search style={{ width: "300px" }} size="large" placeholder="Search For Project" />
+        </AutoComplete>
+
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react'
 import {Col, Container, Row } from 'react-bootstrap'
 import '../../../assets/css/intro_part.css'
 import { Button } from 'antd'
+import { Link } from 'react-router-dom'
 
 
 const creative = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/creative.png'
@@ -23,7 +24,10 @@ const IntroPart = () => {
                             <br/> Pay securely and confidently.
                         </p>
                     </div>
-                    <Button href = "/dashboard/jobs" shape = "round" style = {{color:"white",backgroundColor:"green",height:"50px",width:"150px",paddingTop:".5em"}} >Hire Us</Button>
+                        <Link to="/dashboard/jobs" >
+                            <Button  shape="round" style={{ color: "white", backgroundColor: "green", height: "50px", width: "150px", paddingTop: ".5em" }} >Hire Us</Button>
+
+                    </Link>
                
                 </Col>
             </Row>

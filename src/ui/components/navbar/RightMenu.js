@@ -29,7 +29,7 @@ const RightMenu = ({mode}) => {
     ):(
         <Menu style = {{border:"none"}} mode={mode}>
 
-       <Menu.Item title = "Dashboard"  href = "/dashboard" icon = {<DashboardOutlined style = {{fontSize:"1.2rem"}} />}>
+       <Menu.Item title = "Dashboard"   icon = {<DashboardOutlined style = {{fontSize:"1.2rem"}} />}>
              <NavLink to = "/dashboard">Dashboard</NavLink>
              </Menu.Item >
 

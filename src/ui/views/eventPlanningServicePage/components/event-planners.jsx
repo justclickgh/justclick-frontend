@@ -2,6 +2,7 @@ import { Button, Card,Image, Rate,Tag } from 'antd'
 
 import React from 'react'
 import { Col,Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 export const planned_items = [
@@ -72,9 +73,12 @@ const EventPlanners = () => {
 
                     </Col>
                     <Col xs = "4" sm = "6">
-                          <Button href = "/services/event-planning/all-planners" style = {{color:"green",border:"none",position:"absolute",right:"15%"}} >
+                        <Link to="/services/event-planning/all-planners" >
+                            <Button style={{ color: "green", border: "none", position: "absolute", right: "15%" }} >
                                 View all
                         </Button>
+                        </Link>
+                         
 
                     </Col>
             </Row>

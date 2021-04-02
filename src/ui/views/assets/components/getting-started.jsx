@@ -1,6 +1,7 @@
 import { Button, Card, Divider } from 'antd'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Banner from './banner'
 
 const photo = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photo.png'
@@ -41,9 +42,12 @@ const GettingStarted = () => {
                             </Col>
                         </Row>
                         <Divider/>
-                            <Button  href = "/assets/photos" style = {{backgroundColor:"#3CA859",color:"#fff"}} size = "large" shape = "round">
-                                  Download Photos
-                              </Button>                    
+                            <Link to="/assets/photos" >
+                                <Button style={{ backgroundColor: "#3CA859", color: "#fff" }} size="large" shape="round">
+                                    Download Photos
+                              </Button>
+                        </Link>
+                                              
                             </Card>
                 </Col>
                         <Col xs = "12" sm = "6" lg = "3" >
@@ -63,9 +67,12 @@ const GettingStarted = () => {
                             </Col>
                         </Row>
                         <Divider/>
-                            <Button href = "/assets/source-codes"  style = {{backgroundColor:"#3CA859",color:"#fff"}} size = "large" shape = "round">
-                                  Download codes
-                              </Button>                    
+                            <Link to="/assets/source-codes"  >
+                                <Button style={{ backgroundColor: "#3CA859", color: "#fff" }} size="large" shape="round">
+                                    Download codes
+                              </Button>
+                        </Link>
+                                               
                             </Card>
                 </Col>
                         <Col xs = "12" sm = "6" lg = "3" >
@@ -85,9 +92,12 @@ const GettingStarted = () => {
                             </Col>
                         </Row>
                         <Divider/>
-                            <Button href = "/assets/graphic-design-template" style = {{backgroundColor:"#3CA859",color:"#fff"}} size = "large" shape = "round">
-                                  Download designs
-                              </Button>                    
+                            <Link to="/assets/graphic-design-template" >
+                                <Button  style={{ backgroundColor: "#3CA859", color: "#fff" }} size="large" shape="round">
+                                    Download designs
+                              </Button>
+                        </Link>
+                                            
                             </Card>
                 </Col>
                         <Col xs = "12" sm = "6" lg = "3" >
@@ -107,9 +117,12 @@ const GettingStarted = () => {
                             </Col>
                         </Row>
                         <Divider/>
-                            <Button href = "href/ui-ux-designs" style = {{backgroundColor:"#3CA859",color:"#fff"}} size = "large" shape = "round">
-                                  Download designs
-                              </Button>                    
+                            <Link to= "/ui-ux-designs"  >
+                                <Button style={{ backgroundColor: "#3CA859", color: "#fff" }} size="large" shape="round">
+                                    Download designs
+                              </Button>
+                        </Link>
+                                             
                             </Card>
                 </Col>
 

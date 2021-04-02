@@ -1,5 +1,6 @@
 import { Button, Result } from 'antd'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const EmptyComponent = ({match}) => {
     return (
@@ -8,7 +9,7 @@ const EmptyComponent = ({match}) => {
             status="404"
             title="No data"
             subTitle="Sorry, There is no data"
-            extra={<Button href = {match.url} type="primary">Reload</Button>}
+                extra={<Link to={match.url} ><Button type="primary">Reload</Button></Link>}
   />
         </div>
     )
