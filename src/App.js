@@ -24,6 +24,8 @@ import { useCallback, useEffect } from 'react';
 import { getLocalUserType } from './utils/local_objects/loacal_storage';
 import ProtectedDashboardRoutes from './ui/protected_dashboard_routes'
 import AssetOwnerRegistrationPage from './ui/views/asset_owner_registration_page';
+import FreelancerRegistrationPage from './ui/views/creative_person_resgistation_page';
+import ProtectedRoute from './ui/views/protected_routes';
 
 const style = {
   height: 40,
@@ -85,8 +87,15 @@ useEffect(() => {
        <Route path = '/top-freelancers' component = {TopFreeLancersPage}/>
        <Route exact path = "/signup" component = {SignUp} />
        <Route exact path = "/about" component = {About} />
-        <Route exact path = "/asset-owner-register" component = {AssetOwnerRegistrationPage} />
-       
+
+       <Route path = "/asset_owner/register">
+          <ProtectedRoute component = {AssetOwnerRegistrationPage} />
+       </Route>
+
+          <Route path = "/freelancer/register">
+          <ProtectedRoute component = {FreelancerRegistrationPage} />
+       </Route>
+
        <Route path = "/dashboard"  >
          <ProtectedDashboardRoutes />
        </Route>
