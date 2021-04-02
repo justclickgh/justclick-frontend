@@ -22,7 +22,8 @@ import { connect } from 'react-redux';
 import { setUserType } from './redux/actions/app_state_types';
 import { useCallback, useEffect } from 'react';
 import { getLocalUserType } from './utils/local_objects/loacal_storage';
-import ProtectedDashboardRoutes from './ui/protected_routes'
+import ProtectedDashboardRoutes from './ui/protected_dashboard_routes'
+import AssetOwnerRegistrationPage from './ui/views/asset_owner_registration_page';
 
 const style = {
   height: 40,
@@ -84,6 +85,8 @@ useEffect(() => {
        <Route path = '/top-freelancers' component = {TopFreeLancersPage}/>
        <Route exact path = "/signup" component = {SignUp} />
        <Route exact path = "/about" component = {About} />
+        <Route exact path = "/asset-owner-register" component = {AssetOwnerRegistrationPage} />
+       
        <Route path = "/dashboard"  >
          <ProtectedDashboardRoutes />
        </Route>
