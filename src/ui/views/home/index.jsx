@@ -1,6 +1,6 @@
 import React from 'react'
 import HowItWorks from '../../components/how_it_works'
-import HowItWorks2 from '../../components/how_it_works_2'
+// import HowItWorks2 from '../../components/how_it_works_2'
 
 import IntroPart from '../../components/intro_part'
 import ServicesPart from '../../components/servicesPart'

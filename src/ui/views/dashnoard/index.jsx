@@ -22,6 +22,7 @@ import { fetchJobStatistics } from '../../../redux/actions/user_jobs_statistocs_
 import logo from '../../../assets/images/logo-2.webp'
 import { getProfile } from '../../../redux/actions/cur_user_profile_action';
 import { Col, Row } from 'react-bootstrap';
+import PostJobPage from './components/post_job_form';
 
 
 
@@ -65,7 +66,7 @@ const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentU
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
-
+post_job_form
       <Drawer
         placement="left"
         onClose={() => { setState({ visible: false }) }}
@@ -81,9 +82,9 @@ const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentU
 
             <Link to="/dashboard" >Statistics</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<EditOutlined />}><Link to="/user-dashboard/jobs" >Job</Link></Menu.Item>
+          <Menu.Item key="2" icon={<EditOutlined />}><Link to="/dashboard/jobs" >Job</Link></Menu.Item>
 
-          <Menu.Item key="3" icon={<UserOutlined />}><Link to="/user-dashboard/profile" >Profile</Link></Menu.Item>
+          <Menu.Item key="3" icon={<UserOutlined />}><Link to="/dashboard/profile" >Profile</Link></Menu.Item>
 
         </Menu>
 
@@ -103,11 +104,14 @@ const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentU
                   description: <div>
                     <Row>
                       <Col sm="12">
-                        <hr />
-                        <Link to="/user-dashboard/profile" >
-                          <Button style={{ width: "100%", border: "none" }} > Profile </Button>
+                        <Divider />
+                      
+                          <Button 
+                          onClick = {()=>{
+                            history.push('/dashboard/profile')
+                          }}
+                          style={{ width: "100%", border: "none" }} > Profile </Button>
 
-                        </Link>
                         <hr />
                       </Col>
 
@@ -137,7 +141,7 @@ const DashBoard = ({ getJobs, fetchJobStatistics, getAllPendingJobs, getCurrentU
 
 
           <Switch>
-
+            <Route path={`${match.url}/jobs/post_job`} component={PostJobPage} />
             <Route path={`${match.url}/jobs`} component={JobsPart} />
             <Route path={`${match.url}/profile`} component={ProfilePart} />
             <Route exact path="" component={StatisticsPart} />

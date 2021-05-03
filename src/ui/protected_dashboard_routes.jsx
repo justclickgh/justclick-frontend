@@ -14,9 +14,9 @@ const ProtectedDashboardRoutes = ({ appState, component, ...rest }) => {
             {...rest}
             render={(props) => {
                 if (getIsAuth()) {
-                    return appState.userType === "is_freelancer" ? <CreativePersonDashboard {...rest} />
-                        : appState.userType === "is_assset_owner" ? <AssetOwnerDashbard {...rest} />
-                            : <DashBoard {...rest} />
+                    return appState.userType === "is_freelancer" ? <CreativePersonDashboard {...props} />
+                        : appState.userType === "is_assset_owner" ? <AssetOwnerDashbard {...props} />
+                            : <DashBoard {...props} />
                 } else {
                     return <Redirect to={
                         {

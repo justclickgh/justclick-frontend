@@ -95,7 +95,7 @@ const AssetOwnerDashbard = ({ match, fethAssets }) => {
                                                 <Row>
                                                     <Col sm="12">
                                                         <hr />
-                                                        <Link to "/user-dashboard/profile">
+                                                        <Link to = "/user-dashboard/profile">
                                                             <Button style={{ width: "100%", border: "none" }} > Profile </Button>
 
                                                         </Link>
