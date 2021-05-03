@@ -21,7 +21,7 @@ const HowItWorks = () => {
                
             <Row>
                 <Col sm = "12" xs = "12" md = "12" lg = "12">
-                <h2 className = "text-center my-3">How It Works For Clients </h2>
+                <h2 className = "text-center my-3">How It Works </h2>
                 <p  className = "text-center my-3">There are couple of steps to complete as a client. Take time to complete all the steps below, start posting jobs and let get it done for you. </p>
 
                 </Col>

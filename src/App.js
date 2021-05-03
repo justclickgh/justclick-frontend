@@ -1,7 +1,7 @@
 import './App.css'
 import HomePage from "./ui/views/home";
 import {Route,BrowserRouter as Router,Switch} from 'react-router-dom'
-import Login from './ui/views/login';
+// import Login from './ui/views/login';
 import SignUp from './ui/views/registration';
 import About from './ui/views/about';
 import NoMatch from './ui/views/noMatch';
@@ -26,6 +26,9 @@ import ProtectedDashboardRoutes from './ui/protected_dashboard_routes'
 import AssetOwnerRegistrationPage from './ui/views/asset_owner_registration_page';
 import FreelancerRegistrationPage from './ui/views/creative_person_resgistation_page';
 import ProtectedRoute from './ui/views/protected_routes';
+import AssetsUploader from './ui/views/assetsUploaderPage';
+import FreelancerPage from './ui/views/freelancerPage';
+import LoginRedirect from './ui/views/login_redirect';
 
 const style = {
   height: 40,
@@ -83,16 +86,19 @@ useEffect(() => {
        <Route path = "/services/mobile-and-web-developement" component = {DevelopmentServicePage} />
        <Route path = "/services/photography" component = {PhotographyServicePart} />
        <Route path = "/services/event-planning" component = {EventPlanningServicePage} />
-       <Route exact path = "/login" component = {Login} />
+       <Route path = "/login" >
+         <LoginRedirect  />
+       </Route>
        <Route path = '/top-freelancers' component = {TopFreeLancersPage}/>
        <Route exact path = "/signup" component = {SignUp} />
+       <Route exact path = "/asset_owner" component = {AssetsUploader} />
+       <Route exact path = "/freelancer" component = {FreelancerPage} />
        <Route exact path = "/about" component = {About} />
-
-       <Route path = "/asset_owner/register">
+       <Route exact path = "/asset_owner/register">
           <ProtectedRoute component = {AssetOwnerRegistrationPage} />
        </Route>
 
-          <Route path = "/freelancer/register">
+          <Route exact path = "/freelancer/register">
           <ProtectedRoute component = {FreelancerRegistrationPage} />
        </Route>
 

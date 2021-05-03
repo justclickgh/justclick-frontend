@@ -3,6 +3,7 @@ import Banner from './banner'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Button, Card, Image } from 'antd'
 import { DownloadOutlined, EyeOutlined } from '@ant-design/icons'
+import { Link } from 'react-router-dom'
 
 const photo1 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography1.jpg'
 const photo2 = 'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/photography2.jpg'
@@ -77,9 +78,12 @@ const Photo = () => {
                             <Col xl = "4" sm = "4" >
                                 <Row>
                                     <Col xs = "6" sm = "6" >
-                                        <Button  href = {`/assets/photos/${photo.id}`} style = {{borderColor:"green",padding:".4em",border:"none"}} >
-                                            <EyeOutlined style = {{color :"green",fontSize :"1.2rem"}}   />
-                                        </Button>
+                                        <Link to={`/assets/photos/${photo.id}`} >
+                                            <Button style={{ borderColor: "green", padding: ".4em", border: "none" }} >
+                                                <EyeOutlined style={{ color: "green", fontSize: "1.2rem" }} />
+                                            </Button>
+                                        </Link>
+                                      
                                     </Col>
                                     <Col className = "mr-1" xs = "5" sm = "5" >
                                         <Button  style = {{borderColor:"green",padding:".4em",border:"none"}} >

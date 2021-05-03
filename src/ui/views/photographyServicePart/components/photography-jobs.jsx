@@ -4,6 +4,7 @@ import { Image ,Button,Card, Rate, Tag} from 'antd'
 import React from 'react'
 
 import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 const arerial_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/10 6. Arerial Photography.jpeg'
 const food_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/food_photography.jpg'
 const docmentation_photography =  'https://justclick-backend-statics.s3.amazonaws.com/fe-statics/9 5. Documentary Photography.jpg'
@@ -103,9 +104,12 @@ const PhotographyJobs = () => {
 
                     </Col>
                     <Col>
-                          <Button href = "/services/photography/list-photographs" style = {{color:"green",border:"none",position:"absolute",right:"15%"}} >
+                        <Link to="/services/photography/list-photographs" >
+                            <Button style={{ color: "green", border: "none", position: "absolute", right: "15%" }} >
                                 View all
                         </Button>
+                    </Link>
+                          
                     </Col>
                 </Row>
           

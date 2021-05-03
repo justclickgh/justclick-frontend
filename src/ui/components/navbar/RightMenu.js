@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Menu} from 'antd';
+import { Button,  Dropdown, Menu} from 'antd';
 import 'antd/dist/antd.css'
-import {DashboardOutlined, DownloadOutlined} from '@ant-design/icons';
+import {DashboardOutlined, PoundCircleOutlined} from '@ant-design/icons';
 import getIsAuth from '../../../utils/getIsAuth';
-import {  NavLink} from 'react-router-dom';
+import {  Link, NavLink} from 'react-router-dom';
 
 const RightMenu = ({mode}) => {
     const [loggedOut,setLoggedOut] = useState(false)
@@ -29,13 +29,37 @@ const RightMenu = ({mode}) => {
     ):(
         <Menu style = {{border:"none"}} mode={mode}>
 
-       <Menu.Item title = "Dashboard"  href = "/dashboard" icon = {<DashboardOutlined />}>
+       <Menu.Item title = "Dashboard"   icon = {<DashboardOutlined style = {{fontSize:"1.2rem"}} />}>
              <NavLink to = "/dashboard">Dashboard</NavLink>
              </Menu.Item >
 
-       <Menu.Item title = "Dashboard"  href = "/dashboard" icon = {<DownloadOutlined />}>
-             <NavLink to = "/asset-owner-dashboard">Downloads</NavLink>
-             </Menu.Item >
+
+             <Dropdown arrow overlay = {(
+               <Menu>
+                 <Menu.SubMenu key = "0.1" title = "Freelancer" >
+                     <Menu.Item key  = "0">
+                   <Link to = "/freelancer" >Getting Started</Link>
+                 </Menu.Item>
+                 <Menu.Item key  = "1">
+                   <Link to = "/freelancer/register" >Freelancer registration</Link>
+                 </Menu.Item>
+                 </Menu.SubMenu>
+
+
+                  <Menu.SubMenu key = "0.2" title = "Upload assets" >
+                     <Menu.Item key  = "0">
+                   <Link to = "/asset_owner" >Getting Started</Link>
+                 </Menu.Item>
+                 <Menu.Item key  = "1">
+                   <Link to = "/asset_owner/register" >Assets Uploader registration</Link>
+                 </Menu.Item>
+                 </Menu.SubMenu>
+
+                
+               </Menu>
+             )}  >
+               <Button style = {{border:"none",background:"none",boxShadow:"none"}} icon ={<PoundCircleOutlined style = {{fontSize:"1.2rem"}} />} > Busuiness Center</Button>
+             </Dropdown>
       </Menu>
     )
 }

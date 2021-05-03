@@ -20,12 +20,12 @@ const HowItWorks2 = () => {
                
             <Row>
                 <Col sm = "12" xs = "12" md = "12" lg = "12">
-                <h2 className = "text-center my-3">How It Works For Creative Person </h2>
+                <h2 className = "text-center my-3">How It Works </h2>
                 <p  className = "text-center my-3">There are couple of steps to complete as a creative person. Take time to complete all the steps below, start posting jobs and let get it done for you. </p>
 
                 </Col>
                     <Col className = "my-2" xs = "12"  sm = "6" lg = "4">
-                        <CustomNoImageCard img = {register} icon = {<UserAddOutlined className = "pr-1"/>} title = " Sign up" body = "First of all you need to sign up to be able to enjoy our services for free "  />
+                        <CustomNoImageCard bottonText = "Register" link = "/freelancer/register" img = {register} icon = {<UserAddOutlined className = "pr-1"/>} title = " Sign up" body = "First of all you need to sign up to be able to enjoy our services for free "  />
                     </Col>
                     <Col className = "my-2" xs = "12"  sm = "6" lg = "4">
                         <CustomNoImageCard img = {email} icon = {<PlusCircleOutlined className = "pr-1"/>} title = " Email Confirmation " body = "An email will be sent to the email provided during registration to confirm the email account. If email is not confirmed, account will be deactivated and deleted after 10 days" />

@@ -27,22 +27,22 @@ const Footer = () => {
                 style={{ width: '60px' }}
               />
               <p>
-                <Link  to = "/services/photography" className ="dark-grey-text" href="#!">
+                <Link  to = "/services/photography" className ="dark-grey-text">
                   Photography
                 </Link>
               </p>
               <p>
-                <Link  to = "/services/mobile-and-web-developement" className ="dark-grey-text" href="#!">
+                <Link  to = "/services/mobile-and-web-developement" className ="dark-grey-text">
                   Mobile App & Web development
                 </Link>
               </p>
               <p>
-                <Link to = "/services/event-planning" className ="dark-grey-text" href="#!">
+                <Link to = "/services/event-planning" className ="dark-grey-text">
                   Event Planning
                 </Link>
               </p>
               <p>
-                <Link to = "/services/graphic-design" className ="dark-grey-text" href="#!">
+                <Link to = "/services/graphic-design" className ="dark-grey-text">
                   Graphic & UI/UX design
                 </Link>
               </p>
@@ -55,22 +55,22 @@ const Footer = () => {
                 style={{ width: '60px' }}
               />
               <p>
-                <Link to = "/contact-us" className ="dark-grey-text" href="#!">
+                <Link to = "/contact-us" className ="dark-grey-text">
                   Contacts
                 </Link>
               </p>
               <p>
-                <Link to = "/about-us" className ="dark-grey-text" href="#!">
+                <Link to = "/about-us" className ="dark-grey-text">
                   About
                 </Link>
               </p>
               <p>
-                <Link to = "/term-and-conditions" className ="dark-grey-text" href="#!">
+                <Link to = "/term-and-conditions" className ="dark-grey-text">
                   Privacy policy
                 </Link>
               </p>
               <p>
-                <Link to = "/term-and-conditions" className ="dark-grey-text" href="#!">
+                <Link to = "/term-and-conditions" className ="dark-grey-text">
                   Terms & Conditions
                 </Link>
               </p>
@@ -100,7 +100,7 @@ const Footer = () => {
 
         <div className ="footer-copyright  text-center text-black-50 py-4 bg-dark">
          <p> © 2020 Copyright:</p>
-          <Link className ="dark-grey-text" href="/">
+          <Link to ="/" className ="dark-grey-text" >
             {' '}
             Justclick.com
           </Link>

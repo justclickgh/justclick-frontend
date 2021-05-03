@@ -55,7 +55,7 @@ const AssetOwnerRegistrationPage = () => {
                                             <li className={`${state.currentFs === 3 ? "active" : ""}`} id="confirm"><strong>Finish</strong></li>
                                         </ul>
 
-                                        <Card id = "c-card" >
+                                        <Card id="c-card" >
                                             <Form hidden={state.currentFs !== 0}>
                                                 <div className="fieldset1">
                                                     <Form.Item
@@ -192,14 +192,14 @@ const AssetOwnerRegistrationPage = () => {
                                             <div hidden={state.currentFs !== 3} className="finish">
                                                 <Result
                                                     status="success"
-                                                    title="Congratulations" 
-                                                    subTitle= {(
+                                                    title="Congratulations"
+                                                    subTitle={(
                                                         <>
                                                             <p>You have succefully setup up an asset owner account. </p>
                                                             <small>Your account will be reviewed and confimed within 48 hours.</small>
                                                         </>
-                                                    )} 
-                                                    />
+                                                    )}
+                                                />
                                             </div>
                                         </Card>
                                     </Form>

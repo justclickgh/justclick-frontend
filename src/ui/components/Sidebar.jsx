@@ -111,6 +111,16 @@ const Sidebar = ({ location, loginData }) => {
         loading: false
       })
       history.push("/")
+      let next = "/"
+      if (location.states.next) {
+        console.log("No");
+        console.log(location.state.next.pathname);
+        next = location.state.next.pathname
+
+      }
+      history.push(next)
+
+
 
 
 
@@ -120,15 +130,15 @@ const Sidebar = ({ location, loginData }) => {
         loading: false
       })
       if (error.response) {
-        if (error.response.status === 400) {
+        if (error.response.status === 400)
           message.error("Login failed")
-        } else {
+        else
           message.error(error.response.data.detail)
-        }
 
-      } else if (error.request) {
+
+      } else if (error.request)
         message.error("Network error")
-      }
+
     })
   }
 
@@ -137,6 +147,7 @@ const Sidebar = ({ location, loginData }) => {
   return (
 
     <Container id="register">
+      {/* {console.log(location.state.next.pathname)} */}
       {/* {handleSuccesRedirect()} */}
       <Spin spinning={state.loading} tip="loading" >
         <div style={{ textAlign: "center" }} className="header-part">
@@ -145,7 +156,6 @@ const Sidebar = ({ location, loginData }) => {
 
             <img src={logo} alt="" />
           </LogoWrapper>
-          {/* <Button  style = {{margin:"2em 1em 0 0"}} href = "/" icon = {<HomeOutlined />} shape = "round">Home</Button> */}
         </div>
 
         <div >
